@@ -1,0 +1,17 @@
+﻿<Window x:Class="WPF_JMRD.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_JMRD"
+        mc:Ignorable="d"
+        Title="WPF_JMRD" Height="450" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0" x:Name="btnOperacion" Style="{StaticResource Button_1}" Content="Ejecutar operación" BorderBrush="#bababa" Click="Button_Click"/>
+        <TextBlock Grid.Row="1" x:Name="tbResultado" />
+    </Grid>
+</Window>
